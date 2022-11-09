@@ -11,6 +11,6 @@ import javax.persistence.Entity;
 @Entity
 @DiscriminatorValue(value = "COMISSIONADO")
 public class Comissionado extends Funcionario{
-    double percentualComissao;
+    Double percentualComissao;
     Double salarioBisemanal;
 }

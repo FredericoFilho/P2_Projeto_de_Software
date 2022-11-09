@@ -24,10 +24,10 @@ public class Funcionario {
 
     String endereco;
 
+    int preferenciaPagamento;
     //0 = cheque em maos
     //1= correio
     //2= deposito
-    int preferenciaPagamento;
 
     boolean sindicalista;
 
