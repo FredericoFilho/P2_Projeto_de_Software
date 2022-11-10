@@ -27,8 +27,14 @@ public class Funcionario {
     int preferenciaPagamento;
     //0 = cheque em maos
     //1= correio
-    //2= deposito
+    //2= deposito bancario
 
     boolean sindicalista;
 
+    // atributo pendente, apenas foi declarado aqui ate agora
+    int agendaDePagamento;
+    //                       Default
+    //0 = semanalmente     (horistas)
+    //1= mensalmente       (assalariados)
+    //2= bi-semanalmente   (comissionados)
 }

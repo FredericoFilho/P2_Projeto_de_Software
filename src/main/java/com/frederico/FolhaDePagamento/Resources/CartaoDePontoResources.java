@@ -30,8 +30,7 @@ public class CartaoDePontoResources {
     }
 
     @GetMapping("/cartoesDePonto")
-    public List<CartaoDePonto> listCartoesDePonto()
-    {
+    public List<CartaoDePonto> listCartoesDePonto() {
         return cartaoDePontoRepository.findAll();
     }
     @GetMapping("/cartaoDePonto/{id}")

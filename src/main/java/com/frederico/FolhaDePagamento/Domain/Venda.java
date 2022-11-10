@@ -4,6 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.OneToOne;
 
 @Getter
@@ -11,8 +13,11 @@ import javax.persistence.OneToOne;
 @Entity
 
 public class Venda {
+    @javax.persistence.Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    Long Id;
     String data;
-    double valor;
+    Double valor;
 
     @OneToOne
     Comissionado comissionado;
